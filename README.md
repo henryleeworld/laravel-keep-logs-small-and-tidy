@@ -1,4 +1,4 @@
-# Laravel 11 保持日誌整潔
+# Laravel 12 保持日誌整潔
 
 引入 accentinteractive 的 laravel-logcleaner 套件來擴增保持日誌整潔，可配置想要保存的日誌總數。當到達此日誌數目時，在建立新的日誌前，它會刪除最舊的日誌。
 
@@ -16,6 +16,10 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+```sh
+$ php artisan migrate
+```
 - 執行 __Artisan__ 指令的 __logcleaner:run__ 來執行修飾大型日誌檔案和刪除舊的日誌檔案。
 ```sh
 $ php artisan logcleaner:run
@@ -24,5 +28,5 @@ $ php artisan logcleaner:run
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/NskDKN2.png)
+![](https://i.imgur.com/2Wdr7zk.png)
 > 可以定義日誌策略
